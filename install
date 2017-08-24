@@ -1,0 +1,12 @@
+#!/bin/bash
+
+/usr/bin/expect <<EOF
+    spawn bash /root/scrolloutf1/www/bin/install.sh
+    expect {
+        "Keyboard layout:" {
+            send -- "1\r"
+        }
+    }
+EOF
+
+    
